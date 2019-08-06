@@ -1,0 +1,225 @@
+body, html{
+    /* pequeño reset, ignorar */
+    margin:0;
+    padding:0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+  #imagen{
+    height: 100vh;
+}
+
+.mt-4{
+   margin-top: 40px; 
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #0d47a1  !important;
+  }
+  /* label underline focus color */
+  .row .input-field input:focus {
+    border-bottom: 1px solid #0d47a1   !important;
+    box-shadow: 0 1px 0 0 #0d47a1   !important
+  }
+
+/* Este cambia el color del label del campo cuando no está seleccionado */
+.input-field label {
+    color: #1565c0 ; 
+  }
+
+/* Si usas la propiedad validate, el color de la línea al validar, será este */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #64dd17;
+    box-shadow: 0 1px 0 0 #64dd17;
+  }
+
+  .input-field input[type=password].valid {
+    border-bottom: 1px solid #64dd17;
+    box-shadow: 0 1px 0 0 #64dd17;
+  }
+  /* Y este será el color en el caso que se tome como inválido */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 red;
+  }
+
+  /* este cambia el color al ícono cuando entras a un campo */
+.input-field .prefix.active {
+    color: #0d47a1  !important; 
+  }
+
+.input-field .prefix {
+    color: #1565c0 !important; 
+  }
+
+.waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(17, 59, 197,0.7);
+  }
+
+.seleccion1{
+    margin: 100px auto;
+    width: 1200px;
+    height: 230px;
+}
+
+.seleccion2{
+  margin: 100px auto;
+    width: 600px;
+    height: 230px;
+}
+
+div.contenido{
+    width: 200px;
+    height: 230px;
+    float: left;
+    transition: height .4s;
+}
+/*Inicio de colores del menú*/
+div#uno{
+    background-color: #f57f17;
+}
+
+div#dos{
+    background-color: #e65100;
+}
+
+div#tres{
+    background-color: #0277bd;
+}
+
+div#cuatro{
+    background-color: rgb(32, 82, 114);
+    
+}
+
+div#cinco{
+    background-color: rgb(21, 40, 54);
+}
+
+div#seis{
+    background-color: rgb(20, 20, 20);
+}
+
+
+div#un{
+  background-color: #4dd0e1;
+}
+
+div#do{
+  background-color: #02bfd4;
+}
+
+div#tre{
+  background-color: #5f209b;
+}
+
+div#cua{
+  background-color: rgb(83, 27, 126);
+  
+}
+
+div#cin{
+  background-color: rgb(50, 50, 50);
+}
+
+div#sei{
+  background-color: rgb(30, 30, 30);
+}
+/*Fin de colores*/
+
+i.icono{
+  display: block;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, .15);
+  width: 70px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0);
+  transition: box-shadow .4s;
+}
+
+p.texto{
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  opacity: .6;
+  transition: padding-top .4s;
+}
+
+div.contenido:hover{
+  height: 280px;
+}
+
+div.contenido:hover p.texto{
+  padding-top: 30px;
+  opacity: 1;
+  font-weight: 400;
+}
+
+div.contenido:hover i.icono{
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, .6);
+}
+
+.card .card-image img{
+  opacity: .7;
+  transition: opacity .4s;
+}
+.card:hover .card-image img{
+  opacity: 1;
+}
+
+
+.picker__date-display, .picker__weekday-display{
+  background-color: #1565c0 !important;
+}
+
+.picker__day--infocus:hover {
+  color: #1565c0 !important;
+  font-weight: 1000;
+}
+
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  background-color: #1565c0 !important;
+  color: #ffffff !important;
+}
+
+.picker__close, .picker__today {
+
+  color: #1565c0 !important;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #0277bd !important;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:before,
+[type="radio"].with-gap:checked + label:after {
+  border: 2px solid #0277bd !important;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"].with-gap:checked + label:after {
+  background-color: #0277bd !important;
+}
+
+textarea.materialize-textarea:focus + label {
+  color: #0277bd ;
+}
+
+.carousel{
+  height: 500px !important;
+}
+
+.carousel .carousel-item {
+  width: 220px;
+  height: 250px;
+}
